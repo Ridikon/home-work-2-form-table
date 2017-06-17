@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Ресторани Львова.</h1>
+    <h2>Опитування:</h2>
+    <hr>
+    <form action="https://formspree.io/ridikon666@gmail.com" method="POST">
+        <fieldset>
+            <legend>
+                <b>Контактна інформація</b>
+            </legend>
+            <br>
+            <label for="username">Ваше ім'я: </label>
+            <input id="username" type="text" name="name" placeholder="Ваше ім'я" required>
+            <br>
+            <br>
+            <label for="usernumber">Ваш номер телефону: </label>
+            <input id="usernumber" type="number" name="phone" placeholder="Ваш номер телефону" required>
+            <br>
+            <br>
+            <label for="mail">Ваш email: </label>
+            <input id="mail" type="email" name="email" placeholder="Ваш email" required>
+            <br>
+            <br>
+            <label for="userdate">Дата відвідування: </label>
+            <input id="userdate" type="date" name="date" required>
+            <br>
+            <br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <b>Персональна інформація</b>
+            </legend>
+            <br>
+            <label for="age">Ваш вік: </label>
+            <input id="age" type="number" min="18" max="100" step="1" name="age" placeholder="Ваш вік" required>
+            <br>
+            <br>
+            <label for="kitchen">Улюбена кухня: </label>
+            <select id="kitchen">
+                <option>
+                    Українська
+                </option>
+                <option>
+                    Французька
+                </option>
+                <option>
+                    Японська
+                </option>
+            </select>
+            <br>
+            <br>
+            <p>Ваші улюблені страви: </p>
+            <label>
+                <input type="checkbox" name="favorite" value="Борщ"> Борщ
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="favorite" value="Вареники"> Вареники 
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="favorite" value="Курка гриль"> Курка гриль
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="favorite" value="Суші"> Суші
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="favorite" value="Штрудель"> Штрудель
+            </label>
+            <br>
+            <br>
+            <label for="usertextarea">Вкажіть Ваші побажання: </label>
+            <textarea id="usertextarea" name="textarea" rows="5" cols="30" placeholder="Напишіть тут"></textarea>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <b>Оцінка закладу "Пузата хата"</b>
+            </legend>
+            <br>
+            <p>Оцініть від 1 до 5: </p>
+
+            <label>
+                <input type="radio" name="puzata-xata" value="1">1
+            </label>
+            <label>
+                <input type="radio" name="puzata-xata" value="2">2
+            </label>
+            <label>
+                <input type="radio" name="puzata-xata" value="3">3
+            </label>
+            <label>
+                <input type="radio" name="puzata-xata" value="4">4
+            </label>
+            <label>
+                <input type="radio" name="puzata-xata" value="5">5
+            </label>
+            <br>
+            <br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <b>Оцінка закладу "Смачні сезони"</b>
+            </legend>
+            <br>
+            <p>Оцініть від 1 до 5: </p>
+
+            <label>
+                <input type="radio" name="smachni-sezony" value="1">1
+            </label>
+            <label>
+                <input type="radio" name="smachni-sezony" value="2">2
+            </label>
+            <label>
+                <input type="radio" name="smachni-sezony" value="3">3
+            </label>
+            <label>
+                <input type="radio" name="smachni-sezony" value="4">4
+            </label>
+            <label>
+                <input type="radio" name="smachni-sezony" value="5">5
+            </label>
+            <br>
+            <br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <b>Оцінка закладу "Сіли з'їли"</b>
+            </legend>
+            <br>
+            <p>Оцініть від 1 до 5: </p>
+            <label>
+                <input type="radio" name="sily-zjily" value="1">1
+            </label>
+            <label>
+                <input type="radio" name="sily-zjily" value="2">2
+            </label>
+            <label>
+                <input type="radio" name="sily-zjily" value="3">3
+            </label>
+            <label>
+                <input type="radio" name="sily-zjily" value="4">4
+            </label>
+            <label>
+                <input type="radio" name="sily-zjily" value="5">5
+            </label>
+            <br>
+            <br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <b>Кінець</b>
+            </legend>
+            <br>
+            <p>Вам сподобалось опитування: </p>
+            <label>
+               <input type="radio" name="good" value="Так" checked>Так
+           </label>
+           <label>
+               <input type="radio" name="good" value="Ні">Ні
+           </label>
+           <br>
+           <br>
+       </fieldset>
+       <hr>
+       <input type="submit" name="send" value="Відправити">
+       <input type="reset" name="reset" value="Оновити">
+   </form>
+   <hr>
+   <a href="tables.html"><b>Таблиці</b></a>
+
+</body>
+
+</html>
